@@ -1,0 +1,14 @@
+{
+	"name": "shine",
+	"version": "1.0.0",
+	"description": "<h1>Shine</h1> <p> A collaborative whiteboard application built on top of the MERN stack. You can draw designs and save them for later use. More than one user can use a single whiteboard which supports real-time communication. It has all the features required in a whiteboard like a pen, color picker, resizer, eraser, and functionality to load, save, update, clear, and delete the whiteboard. Inspired by <a href=\"https://webwhiteboard.com\">webwhiteboard</a> </br> <pre> Frontend: React.js, tailwind Backend: Node.js, Express, MongoDB other: axios, socket.io </pre> </p>",
+	"main": "index.js",
+	"scripts": {
+		"build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+		"start": "npm run start --prefix backend"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs"
+}
