@@ -10,7 +10,7 @@ import { io } from "socket.io-client";
 
 // const SOCKET_URL = 'https://shine-backend-zo6m.onrender.com';
 const SOCKET_URL =
-	import.meta.env.MODE === "development" ? "http://localhost:5170" : "/";
+	import.meta.env.MODE === "development" ? "http://localhost:5170" : "";
 export const socket = io(SOCKET_URL);
 
 export const saveWhiteboard = async (data) => {
