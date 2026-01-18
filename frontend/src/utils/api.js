@@ -10,8 +10,12 @@ import { io } from "socket.io-client";
 
 // const SOCKET_URL = 'https://shine-backend-zo6m.onrender.com';
 const SOCKET_URL =
-	import.meta.env.MODE === "development" ? "http://localhost:5170" : "";
-export const socket = io(SOCKET_URL);
+	import.meta.env.MODE === "development"
+		? "http://localhost:5170"
+		: "https://shine-oqyb.onrender.com/";
+export const socket = io(SOCKET_URL, {
+	transports: ["websocket"],
+});
 
 export const saveWhiteboard = async (data) => {
 	const response = await axios.post(`${API_BASE_URL}`, data);

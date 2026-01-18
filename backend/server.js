@@ -29,7 +29,10 @@ app.use("/api/whiteboards", whiteboardRoutes);
 const httpServer = http.createServer(app);
 const io = new Server(httpServer, {
 	cors: {
-		origin: "http://localhost:5173",
+		origin: [
+			"http://localhost:5173",
+			"https://shine-backend-z06m.onrender.com",
+		],
 		methods: ["GET", "POST"],
 	},
 });
